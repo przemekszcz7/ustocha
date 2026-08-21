@@ -1,0 +1,6 @@
+{
+  "name": "Bacówka u Stocha",
+  "description": "Tradycyjna bacówka i wyroby regionalne w Dzianiszu koło Kościeliska. Świeże serki górskie, konfitury, soki, miody oraz poczęstunki dla grup.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
