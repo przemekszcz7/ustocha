@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bacówka u Stocha — Tradycyjne Wyroby Góralskie | Dzianisz, Kościelisko</title>
-  <meta name="description" content="Tradycyjna bacówka w Dzianiszu koło Kościeliska. Świeże serki górskie, naturalne konfitury, soki, miody oraz organizacja poczęstunków dla grup.">
-  <meta property="og:title" content="Bacówka u Stocha — Tradycyjne Wyroby Góralskie">
-  <meta property="og:description" content="Najlepsza zabawa, lokalne produkty. Świeże serki, naturalne konfitury, soki, miody i poczęstunki dla grup w Dzianiszu na Podhalu.">
-  <meta property="og:image" content="https://i.ibb.co/yFJxC7Nq/678326619-122128980069136954-3861177913164235687-n.jpg">
+  <title>Bacówka u Stocha — Tradycyjne Wyroby Góralskie | Sprzedaż Online & Dzianisz</title>
+  <meta name="description" content="Tradycyjna bacówka w Dzianiszu obok Kościeliska. Prowadzimy sprzedaż online i wysyłamy świeże serki górskie na zamówienie w całej Polsce. Naturalne konfitury, soki, miody oraz poczęstunki dla grup.">
+  <meta property="og:title" content="Bacówka u Stocha — Tradycyjne Wyroby Góralskie & Wysyłka na Zamówienie">
+  <meta property="og:description" content="Świeże serki górskie na miejscu i z wysyłką na zamówienie w całej Polsce. Naturalne konfitury, soki, miody i poczęstunki dla grup w Dzianiszu obok Kościeliska.">
+  <meta property="og:image" content="https://i.postimg.cc/fTjdqfSF/678326619-122128980069136954-3861177913164235687-n.jpg">
   <meta property="og:type" content="website">
   
-  <link rel="icon" type="image/jpeg" href="https://i.ibb.co/yFJxC7Nq/678326619-122128980069136954-3861177913164235687-n.jpg">
+  <link rel="icon" type="image/jpeg" href="https://i.postimg.cc/fTjdqfSF/678326619-122128980069136954-3861177913164235687-n.jpg">
   
   <!-- Google Fonts: Fraunces & Nunito -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -155,6 +155,7 @@
       color: var(--mountain-brown);
       line-height: 1.2;
       margin-bottom: 1rem;
+      text-wrap: balance;
     }
 
     .section-title.light {
@@ -168,6 +169,7 @@
       margin-left: auto;
       margin-right: auto;
       font-weight: 400;
+      text-wrap: pretty;
     }
 
     .section-subtitle.light {
@@ -388,7 +390,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url('https://i.ibb.co/svP1wpjC/758915383-122139232305136954-4973685368587633276-n.jpg');
+      background-image: url('https://i.postimg.cc/0yVwP5fX/758915383-122139232305136954-4973685368587633276-n.jpg');
       background-size: cover;
       background-position: center 38%;
       z-index: 1;
@@ -1027,106 +1029,188 @@
       color: var(--gold-cheese);
     }
 
-    /* SECTION 6 — GODZINY OTWARCIA */
-    #godziny {
+    /* SECTION 6 — SPRZEDAŻ ONLINE & WYSYŁKA */
+    #zamowienia {
       padding: 6.5rem 0 6rem;
       background-color: var(--wool-cream);
+      position: relative;
     }
 
-    .hours-card {
-      max-width: 520px;
-      margin: 0 auto;
-      background-color: var(--cream);
+    .orders-steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .order-step-card {
+      background-color: var(--white);
       border-radius: 16px;
+      padding: 2.2rem 1.8rem;
       border: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-md);
       position: relative;
-      overflow: hidden;
-      padding: 2.5rem 2rem 2rem;
-    }
-
-    .hours-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 5px;
-      background-color: var(--gold-cheese);
-    }
-
-    .hours-header {
-      text-align: center;
-      margin-bottom: 1.8rem;
-      padding-bottom: 1.2rem;
-      border-bottom: 1px dashed var(--border-subtle);
-    }
-
-    .hours-header-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background-color: var(--wood-dark);
-      color: var(--gold-cheese);
-      padding: 0.35rem 0.9rem;
-      border-radius: 8px;
-      font-size: 0.76rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      margin-bottom: 0.8rem;
-    }
-
-    .hours-header h3 {
-      font-family: var(--font-serif);
-      font-size: 1.45rem;
-      font-weight: 700;
-      color: var(--mountain-brown);
-    }
-
-    .hours-list {
       display: flex;
       flex-direction: column;
-      gap: 0.65rem;
-      margin-bottom: 1.8rem;
+      justify-content: flex-start;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .hours-row {
+    .order-step-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .order-step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background-color: var(--gold-cheese);
+      color: var(--wood-dark);
+      padding: 0.35rem 0.85rem;
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+      align-self: flex-start;
+    }
+
+    .order-step-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 12px;
+      background-color: var(--wool-cream);
+      color: var(--mountain-brown);
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 0.55rem 0.75rem;
-      border-radius: 8px;
-      transition: background-color 0.2s ease;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border-subtle);
     }
 
-    .hours-row:hover {
-      background-color: var(--wool-cream);
+    .order-step-icon svg {
+      width: 26px;
+      height: 26px;
     }
 
-    .hours-day {
-      font-weight: 600;
-      color: var(--text-dark);
-      font-size: 0.98rem;
-    }
-
-    .hours-time {
+    .order-step-title {
       font-family: var(--font-serif);
-      font-style: italic;
+      font-size: 1.32rem;
       font-weight: 700;
       color: var(--mountain-brown);
-      font-size: 1.05rem;
-      letter-spacing: 0.02em;
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
     }
 
-    .hours-note {
-      text-align: center;
-      font-size: 0.92rem;
-      font-style: italic;
-      font-weight: 400;
+    .order-step-desc {
+      font-size: 0.96rem;
       color: var(--text-muted);
-      padding-top: 1rem;
-      border-top: 1px dashed var(--border-subtle);
+      line-height: 1.6;
+    }
+
+    .orders-callout-box {
+      background: var(--wood-dark);
+      color: var(--white);
+      border-radius: 20px;
+      padding: 2.8rem 3rem;
+      box-shadow: var(--shadow-lg);
+      border: 2px solid var(--gold-cheese);
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .orders-callout-text h3 {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 3vw, 1.95rem);
+      font-weight: 700;
+      color: var(--gold-cheese);
+      margin-bottom: 0.85rem;
+      line-height: 1.2;
+    }
+
+    .orders-callout-text p {
+      font-size: 1.02rem;
+      color: rgba(253, 248, 238, 0.88);
+      line-height: 1.65;
+      margin-bottom: 1.4rem;
+    }
+
+    .orders-perks-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .order-perk-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(212, 160, 57, 0.35);
+      padding: 0.4rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--wool-cream);
+    }
+
+    .order-perk-pill svg {
+      width: 14px;
+      height: 14px;
+      color: var(--gold-cheese);
+    }
+
+    .orders-actions-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .orders-action-btn-call {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background-color: var(--gold-cheese);
+      color: var(--wood-dark);
+      padding: 0.95rem 1.6rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 15px rgba(212, 160, 57, 0.35);
+      transition: all 0.25s ease;
+    }
+
+    .orders-action-btn-call:hover {
+      background-color: #e5b045;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 22px rgba(212, 160, 57, 0.45);
+    }
+
+    .orders-action-btn-sub {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      background-color: rgba(255, 255, 255, 0.08);
+      color: var(--wool-cream);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.8rem 1.4rem;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: all 0.25s ease;
+    }
+
+    .orders-action-btn-sub:hover {
+      background-color: rgba(255, 255, 255, 0.16);
+      border-color: var(--gold-cheese);
+      color: var(--white);
+      transform: translateY(-1px);
     }
 
     /* SECTION 7 — KONTAKT */
@@ -1503,6 +1587,11 @@
         grid-template-columns: 1fr;
         gap: 2.5rem;
       }
+      .orders-callout-box {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2.2rem;
+      }
       .footer-grid {
         grid-template-columns: 1fr 1fr;
         gap: 2.5rem;
@@ -1530,6 +1619,17 @@
         flex-direction: column;
         text-align: center;
         padding: 2rem 1.5rem;
+      }
+      .orders-steps-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+      .orders-callout-box {
+        padding: 1.8rem 1.25rem;
+        text-align: center;
+      }
+      .orders-perks-list {
+        justify-content: center;
       }
       .gallery-grid {
         grid-template-columns: 1fr 1fr;
@@ -1605,7 +1705,7 @@
   <header id="navbar">
     <div class="container nav-container">
       <a href="#hero" class="nav-brand" id="brand-link" aria-label="Strona główna Bacówka u Stocha">
-        <img src="https://i.ibb.co/yFJxC7Nq/678326619-122128980069136954-3861177913164235687-n.jpg" alt="Logo Bacówka u Stocha" class="nav-logo" width="36" height="36">
+        <img src="https://i.postimg.cc/fTjdqfSF/678326619-122128980069136954-3861177913164235687-n.jpg" alt="Logo Bacówka u Stocha" class="nav-logo" width="36" height="36" referrerpolicy="no-referrer">
         <span class="nav-title">Bacówka u Stocha</span>
       </a>
 
@@ -1615,7 +1715,7 @@
           <li><a href="#onas" class="nav-link" id="nav-link-onas">O nas</a></li>
           <li><a href="#produkty" class="nav-link" id="nav-link-produkty">Produkty</a></li>
           <li><a href="#galeria" class="nav-link" id="nav-link-galeria">Galeria</a></li>
-          <li><a href="#godziny" class="nav-link" id="nav-link-godziny">Godziny</a></li>
+          <li><a href="#zamowienia" class="nav-link" id="nav-link-zamowienia">Wysyłka / Zamówienia</a></li>
           <li><a href="#kontakt" class="nav-link" id="nav-link-kontakt">Kontakt</a></li>
         </ul>
       </nav>
@@ -1639,7 +1739,7 @@
     <a href="#onas" class="mobile-link" id="mobile-link-onas">O nas</a>
     <a href="#produkty" class="mobile-link" id="mobile-link-produkty">Produkty</a>
     <a href="#galeria" class="mobile-link" id="mobile-link-galeria">Galeria</a>
-    <a href="#godziny" class="mobile-link" id="mobile-link-godziny">Godziny</a>
+    <a href="#zamowienia" class="mobile-link" id="mobile-link-zamowienia">Wysyłka / Zamówienia</a>
     <a href="#kontakt" class="mobile-link" id="mobile-link-kontakt">Kontakt</a>
     <a href="tel:667505240" class="mobile-cta" id="mobile-cta-btn">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -1665,21 +1765,25 @@
           </svg>
         </div>
 
-        <p class="hero-eyebrow">DZIANISZ — KOŚCIELISKO — PODHALE</p>
+        <p class="hero-eyebrow">DZIANISZ — OBOK KOŚCIELISKA — WYSYŁKA W CAŁEJ POLSCE</p>
 
         <h1 class="hero-title">
           <span class="hero-title-top">Bacówka</span>
           <span class="hero-title-main">u Stocha</span>
         </h1>
 
-        <p class="hero-tagline">Najlepsza zabawa, lokalne produkty.</p>
+        <p class="hero-tagline">Najlepsza zabawa, lokalne produkty i sprzedaż online.</p>
 
         <p class="hero-body">
-          Organizujemy poczęstunki dla grup i nie tylko. Zapraszamy na świeże, pyszne serki, naturalne konfitury, soki i miody.
+          Prowadzimy sprzedaż na miejscu w Dzianiszu oraz <strong>wysyłamy świeże serki na zamówienie w całej Polsce</strong>. Zapraszamy po tradycyjne serki górskie, naturalne konfitury, soki, miody oraz organizowane poczęstunki dla grup.
         </p>
 
         <!-- Product Pills Row -->
         <div class="hero-pills">
+          <span class="hero-pill" style="background: rgba(212, 160, 57, 0.22); border-color: var(--gold-cheese); font-weight: 700; color: #fff;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            Wysyłka na zamówienie
+          </span>
           <span class="hero-pill">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10 5.523 0 10-4.477 10-10 0-2.485-.907-4.759-2.418-6.52L12 12V2z"/><circle cx="8" cy="14" r="1.2" fill="currentColor"/><circle cx="15" cy="15" r="1" fill="currentColor"/></svg>
             Świeże serki
@@ -1736,7 +1840,7 @@
             </div>
 
             <p class="onas-description">
-              Bacówka u Stocha to tradycyjne stoisko z regionalnymi produktami w Dzianiszu koło Kościeliska, oferujące świeże wyroby serowe, naturalne przetwory oraz niezapomniane poczęstunki w autentycznym, góralskim klimacie.
+              Bacówka u Stocha to tradycyjna bacówka i stoisko z regionalnymi produktami w Dzianiszu obok Kościeliska, oferujące świeże wyroby serowe, naturalne przetwory oraz niezapomniane poczęstunki w autentycznym, góralskim klimacie.
             </p>
             <p class="onas-description">
               Każdy wyrób powstaje z poszanowaniem podhalańskiej tradycji i pasji do prawdziwego smaku. Zapraszamy turystów, rodziny oraz grupy zorganizowane do odwiedzenia naszego stoiska i skosztowania tego, co w Tatrach najlepsze.
@@ -1751,8 +1855,8 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="onas-feature-title">Świeże codziennie</h3>
-                  <p class="onas-feature-desc">Serki, konfitury, soki i miody dostępne na miejscu każdego dnia.</p>
+                  <h3 class="onas-feature-title">Świeże każdego dnia</h3>
+                  <p class="onas-feature-desc">Serki, konfitury, soki i miody dostępne na miejscu oraz z wysyłką.</p>
                 </div>
               </div>
 
@@ -1780,11 +1884,11 @@
 
           <div class="onas-visual-frame">
             <div class="onas-photo-wrapper">
-              <img src="https://i.ibb.co/3YGmJ9FQ/588314171-122103209709136954-2785790806104736708-n.jpg" alt="Tradycyjne serki i wyroby w Bacówce u Stocha w Dzianiszu" class="onas-photo" loading="lazy">
+              <img src="https://i.postimg.cc/1X08TyXc/756440980-122139232911136954-2426012813547948537-n.jpg" alt="Tradycyjne serki i wyroby w Bacówce u Stocha w Dzianiszu" class="onas-photo" loading="lazy" referrerpolicy="no-referrer">
             </div>
             <div class="onas-badge-card">
               <p class="onas-badge-title">Bacówka u Stocha</p>
-              <p class="onas-badge-sub">Dzianisz koło Kościeliska</p>
+              <p class="onas-badge-sub">Dzianisz obok Kościeliska</p>
             </div>
           </div>
 
@@ -1883,12 +1987,12 @@
         <!-- Banner Callout -->
         <div class="products-banner">
           <div class="products-banner-text">
-            <h3>Odwiedź nas już dzisiaj i spróbuj najlepszych serków</h3>
-            <p>Zapraszamy do Dzianisza — na pyszny poczęstunek w sercu podhalańskiej natury.</p>
+            <h3>Świeże serki z dostawą do Twojego domu lub na miejscu</h3>
+            <p>Prowadzimy wysyłkę na zamówienie w całej Polsce oraz serdecznie zapraszamy do naszej bacówki w Dzianiszu obok Kościeliska!</p>
           </div>
-          <a href="tel:667505240" class="btn-gold" id="products-banner-cta">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>Zadzwoń: 667 505 240</span>
+          <a href="#zamowienia" class="btn-gold" id="products-banner-cta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span>Zamów z wysyłką</span>
           </a>
         </div>
       </div>
@@ -1911,8 +2015,8 @@
 
         <div class="gallery-grid">
           <!-- G1: Main large featured -->
-          <div class="gallery-item span-2x2" data-full="https://i.ibb.co/3YGmJ9FQ/588314171-122103209709136954-2785790806104736708-n.jpg">
-            <img src="https://i.ibb.co/3YGmJ9FQ/588314171-122103209709136954-2785790806104736708-n.jpg" alt="Tradycyjne serki górskie w Bacówce u Stocha" class="gallery-img" loading="lazy">
+          <div class="gallery-item span-2x2" data-full="https://i.postimg.cc/1X08TyXF/588314171-122103209709136954-2785790806104736708-n.jpg">
+            <img src="https://i.postimg.cc/1X08TyXF/588314171-122103209709136954-2785790806104736708-n.jpg" alt="Tradycyjne serki górskie w Bacówce u Stocha" class="gallery-img" loading="lazy" referrerpolicy="no-referrer">
             <div class="gallery-overlay">
               <div class="gallery-zoom-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
@@ -1921,8 +2025,8 @@
           </div>
 
           <!-- G2 -->
-          <div class="gallery-item" data-full="https://i.ibb.co/pBtzLHpR/615400305-122113633671136954-485353426180592923-n.jpg">
-            <img src="https://i.ibb.co/pBtzLHpR/615400305-122113633671136954-485353426180592923-n.jpg" alt="Świeże specjały w Dzianiszu" class="gallery-img" loading="lazy">
+          <div class="gallery-item" data-full="https://i.postimg.cc/90PDSc0Z/615400305-122113633671136954-485353426180592923-n.jpg">
+            <img src="https://i.postimg.cc/90PDSc0Z/615400305-122113633671136954-485353426180592923-n.jpg" alt="Świeże specjały w Dzianiszu" class="gallery-img" loading="lazy" referrerpolicy="no-referrer">
             <div class="gallery-overlay">
               <div class="gallery-zoom-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
@@ -1931,8 +2035,8 @@
           </div>
 
           <!-- G3 -->
-          <div class="gallery-item" data-full="https://i.ibb.co/TqpTd3q3/615099958-122113633659136954-3997122649221394393-n.jpg">
-            <img src="https://i.ibb.co/TqpTd3q3/615099958-122113633659136954-3997122649221394393-n.jpg" alt="Naturalne przetwory i konfitury" class="gallery-img" loading="lazy">
+          <div class="gallery-item" data-full="https://i.postimg.cc/gjyx5GjR/615099958-122113633659136954-3997122649221394393-n.jpg">
+            <img src="https://i.postimg.cc/gjyx5GjR/615099958-122113633659136954-3997122649221394393-n.jpg" alt="Naturalne przetwory i konfitury" class="gallery-img" loading="lazy" referrerpolicy="no-referrer">
             <div class="gallery-overlay">
               <div class="gallery-zoom-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
@@ -1941,8 +2045,8 @@
           </div>
 
           <!-- G4 -->
-          <div class="gallery-item" data-full="https://i.ibb.co/dJmknJSJ/615143774-122113633689136954-7740084333685823399-n.jpg">
-            <img src="https://i.ibb.co/dJmknJSJ/615143774-122113633689136954-7740084333685823399-n.jpg" alt="Degustacje dla gości" class="gallery-img" loading="lazy">
+          <div class="gallery-item" data-full="https://i.postimg.cc/Rh1W8vhc/615143774-122113633689136954-7740084333685823399-n.jpg">
+            <img src="https://i.postimg.cc/Rh1W8vhc/615143774-122113633689136954-7740084333685823399-n.jpg" alt="Degustacje dla gości" class="gallery-img" loading="lazy" referrerpolicy="no-referrer">
             <div class="gallery-overlay">
               <div class="gallery-zoom-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
@@ -1951,8 +2055,8 @@
           </div>
 
           <!-- G5 -->
-          <div class="gallery-item" data-full="https://i.ibb.co/s91NDH9p/615729148-122113633701136954-6520117888941114222-n.jpg">
-            <img src="https://i.ibb.co/s91NDH9p/615729148-122113633701136954-6520117888941114222-n.jpg" alt="Wyroby góralskie prosto z Podhala" class="gallery-img" loading="lazy">
+          <div class="gallery-item" data-full="https://i.postimg.cc/kGN2Z7GW/615729148-122113633701136954-6520117888941114222-n.jpg">
+            <img src="https://i.postimg.cc/kGN2Z7GW/615729148-122113633701136954-6520117888941114222-n.jpg" alt="Wyroby góralskie prosto z Podhala" class="gallery-img" loading="lazy" referrerpolicy="no-referrer">
             <div class="gallery-overlay">
               <div class="gallery-zoom-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
@@ -1961,8 +2065,8 @@
           </div>
 
           <!-- G6 -->
-          <div class="gallery-item span-2x1" data-full="https://i.ibb.co/ZRd9ZPz4/756440980-122139232911136954-2426012813547948537-n.jpg">
-            <img src="https://i.ibb.co/ZRd9ZPz4/756440980-122139232911136954-2426012813547948537-n.jpg" alt="Klimat Bacówki w Dzianiszu" class="gallery-img" loading="lazy">
+          <div class="gallery-item span-2x1" data-full="https://i.postimg.cc/1X08TyXc/756440980-122139232911136954-2426012813547948537-n.jpg">
+            <img src="https://i.postimg.cc/1X08TyXc/756440980-122139232911136954-2426012813547948537-n.jpg" alt="Klimat Bacówki w Dzianiszu" class="gallery-img" loading="lazy" referrerpolicy="no-referrer">
             <div class="gallery-overlay">
               <div class="gallery-zoom-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
@@ -1971,8 +2075,8 @@
           </div>
 
           <!-- G7 -->
-          <div class="gallery-item" data-full="https://i.ibb.co/3w29gh2/758167847-122139232893136954-8640471517800092991-n.jpg">
-            <img src="https://i.ibb.co/3w29gh2/758167847-122139232893136954-8640471517800092991-n.jpg" alt="Góralska gościnność" class="gallery-img" loading="lazy">
+          <div class="gallery-item" data-full="https://i.postimg.cc/sxPM83xY/758167847-122139232893136954-8640471517800092991-n.jpg">
+            <img src="https://i.postimg.cc/sxPM83xY/758167847-122139232893136954-8640471517800092991-n.jpg" alt="Góralska gościnność" class="gallery-img" loading="lazy" referrerpolicy="no-referrer">
             <div class="gallery-overlay">
               <div class="gallery-zoom-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
@@ -1981,8 +2085,8 @@
           </div>
 
           <!-- G8 -->
-          <div class="gallery-item" data-full="https://i.ibb.co/bj5vkzKZ/757665817-122139232881136954-1631133227077332893-n.jpg">
-            <img src="https://i.ibb.co/bj5vkzKZ/757665817-122139232881136954-1631133227077332893-n.jpg" alt="Bacówka u Stocha" class="gallery-img" loading="lazy">
+          <div class="gallery-item" data-full="https://i.postimg.cc/6qV8SBqV/757665817-122139232881136954-1631133227077332893-n.jpg">
+            <img src="https://i.postimg.cc/6qV8SBqV/757665817-122139232881136954-1631133227077332893-n.jpg" alt="Bacówka u Stocha" class="gallery-img" loading="lazy" referrerpolicy="no-referrer">
             <div class="gallery-overlay">
               <div class="gallery-zoom-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
@@ -2036,60 +2140,107 @@
       </div>
     </section>
 
-    <!-- SECTION 6: GODZINY OTWARCIA -->
-    <section id="godziny" class="fade-up-element" aria-labelledby="godziny-heading">
+    <!-- SECTION 6: SPRZEDAŻ ONLINE & WYSYŁKA -->
+    <section id="zamowienia" class="fade-up-element" aria-labelledby="zamowienia-heading">
       <div class="container">
         <div class="section-header">
           <div class="section-eyebrow">
             <svg width="18" height="12" viewBox="0 0 44 26" fill="none" stroke="currentColor" stroke-width="3"><path d="M2 24 L14 10 L22 18 L34 4 L42 24" /></svg>
-            <span>ZAPRASZAMY</span>
+            <span>SPRZEDAŻ ONLINE & WYSYŁKA</span>
           </div>
-          <h2 id="godziny-heading" class="section-title">Kiedy nas odwiedzisz</h2>
-          <p class="section-subtitle">Jesteśmy otwarci każdego dnia, aby serwować świeże podhalańskie smaki.</p>
+          <h2 id="zamowienia-heading" class="section-title">Wysyłamy serki na zamówienie</h2>
+          <p class="section-subtitle">Prowadzimy sprzedaż online — świeże wyroby prosto z Dzianisza z dostawą pod Twoje drzwi w całej Polsce.</p>
         </div>
 
-        <div class="hours-card">
-          <div class="hours-header">
-            <div class="hours-header-badge">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span>GODZINY OTWARCIA</span>
+        <!-- 3 Steps Grid -->
+        <div class="orders-steps-grid">
+          <!-- Step 1 -->
+          <article class="order-step-card" id="order-step-1">
+            <span class="order-step-badge">Krok 1</span>
+            <div class="order-step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
             </div>
-            <h3>Otwarte przez cały tydzień</h3>
-          </div>
+            <h3 class="order-step-title">Złóż zamówienie</h3>
+            <p class="order-step-desc">
+              Zadzwoń do nas, wyślij e-mail lub napisz wiadomość na Facebooku. Podaj wybrane produkty, ilość oraz dane do wysyłki.
+            </p>
+          </article>
 
-          <div class="hours-list">
-            <div class="hours-row">
-              <span class="hours-day">Poniedziałek</span>
-              <span class="hours-time">08:30 — 18:00</span>
+          <!-- Step 2 -->
+          <article class="order-step-card" id="order-step-2">
+            <span class="order-step-badge">Krok 2</span>
+            <div class="order-step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
             </div>
-            <div class="hours-row">
-              <span class="hours-day">Wtorek</span>
-              <span class="hours-time">08:30 — 18:00</span>
-            </div>
-            <div class="hours-row">
-              <span class="hours-day">Środa</span>
-              <span class="hours-time">08:30 — 18:00</span>
-            </div>
-            <div class="hours-row">
-              <span class="hours-day">Czwartek</span>
-              <span class="hours-time">08:30 — 18:00</span>
-            </div>
-            <div class="hours-row">
-              <span class="hours-day">Piątek</span>
-              <span class="hours-time">08:30 — 18:00</span>
-            </div>
-            <div class="hours-row">
-              <span class="hours-day">Sobota</span>
-              <span class="hours-time">08:30 — 18:00</span>
-            </div>
-            <div class="hours-row">
-              <span class="hours-day">Niedziela</span>
-              <span class="hours-time">08:30 — 18:00</span>
-            </div>
-          </div>
+            <h3 class="order-step-title">Świeże pakowanie</h3>
+            <p class="order-step-desc">
+              Każde zamówienie przygotowujemy na świeżo i pakujemy próżniowo, gwarantując nienaruszoną świeżość, soczystość i aromat podhalańskich serków.
+            </p>
+          </article>
 
-          <p class="hours-note">Zapraszamy codziennie — również w weekendy.</p>
+          <!-- Step 3 -->
+          <article class="order-step-card" id="order-step-3">
+            <span class="order-step-badge">Krok 3</span>
+            <div class="order-step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13" rx="2"/>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                <circle cx="5.5" cy="18.5" r="2.5"/>
+                <circle cx="18.5" cy="18.5" r="2.5"/>
+              </svg>
+            </div>
+            <h3 class="order-step-title">Ekspresowa dostawa</h3>
+            <p class="order-step-desc">
+              Wysyłamy paczkę kurierem lub do Paczkomatu w całej Polsce. Otrzymujesz tradycyjne wyroby prosto z serca Tatr!
+            </p>
+          </article>
         </div>
+
+        <!-- Orders Callout Box with Action Buttons -->
+        <div class="orders-callout-box">
+          <div class="orders-callout-text">
+            <h3>Chcesz zamówić serki z wysyłką?</h3>
+            <p>
+              Skontaktuj się z nami wygodnie telefonicznie lub przez internet. Doradzimy przy wyborze wyrobów i błyskawicznie zrealizujemy Twoje zamówienie.
+            </p>
+            <div class="orders-perks-list">
+              <span class="order-perk-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Pakowanie próżniowe
+              </span>
+              <span class="order-perk-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Wysyłka w całej Polsce
+              </span>
+              <span class="order-perk-pill">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Zawsze świeże partie
+              </span>
+            </div>
+          </div>
+
+          <div class="orders-actions-panel">
+            <a href="tel:667505240" class="orders-action-btn-call" id="order-call-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Zadzwoń: 667 505 240</span>
+            </a>
+            <a href="mailto:klimek.stoch@op.pl" class="orders-action-btn-sub" id="order-email-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>Napisz e-mail z zamówieniem</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61584108646332" target="_blank" rel="noopener noreferrer" class="orders-action-btn-sub" id="order-fb-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Napisz wiadomość na Facebooku</span>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -2105,7 +2256,7 @@
             <span>LOKALIZACJA I KONTAKT</span>
           </div>
           <h2 id="kontakt-heading" class="section-title">Skontaktuj się z nami</h2>
-          <p class="section-subtitle">Chętnie odpowiemy na wszelkie pytania oraz przygotujemy ofertę poczęstunku dla Twojej grupy.</p>
+          <p class="section-subtitle">Chętnie odpowiemy na wszelkie pytania, zrealizujemy zamówienie z wysyłką oraz przygotujemy poczęstunek dla Twojej grupy.</p>
         </div>
 
         <div class="contact-grid">
@@ -2151,8 +2302,8 @@
                   <div>
                     <p class="contact-item-label">Adres</p>
                     <p class="contact-item-value">
-                      Dzianisz, ul. Podhalańska 173<br>
-                      34-514 Kościelisko, Polska
+                      Dzianisz 173 (przy ul. Podhalańskiej)<br>
+                      34-514 Dzianisz / obok Kościeliska
                     </p>
                   </div>
                 </div>
@@ -2192,11 +2343,11 @@
         <!-- Brand Col -->
         <div class="footer-brand">
           <div class="footer-logo-row">
-            <img src="https://i.ibb.co/yFJxC7Nq/678326619-122128980069136954-3861177913164235687-n.jpg" alt="Logo Bacówka u Stocha" class="footer-logo" width="44" height="44">
+            <img src="https://i.postimg.cc/fTjdqfSF/678326619-122128980069136954-3861177913164235687-n.jpg" alt="Logo Bacówka u Stocha" class="footer-logo" width="44" height="44" referrerpolicy="no-referrer">
             <span class="footer-brand-name">Bacówka u Stocha</span>
           </div>
           <p class="footer-tagline">
-            Lokalne produkty z Podhala. Tradycyjne sery, swojskie przetwory, miody i soki przygotowywane z sercem w Dzianiszu.
+            Lokalne produkty z Podhala. Tradycyjne sery, swojskie przetwory, miody i soki przygotowywane z sercem w Dzianiszu obok Kościeliska.
           </p>
         </div>
 
@@ -2219,7 +2370,7 @@
             <li>
               <div class="footer-link">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Dzianisz 173, Kościelisko</span>
+                <span>Dzianisz 173, obok Kościeliska</span>
               </div>
             </li>
           </ul>
@@ -2227,7 +2378,7 @@
 
         <!-- Social Col -->
         <div>
-          <h4 class="footer-col-title">Społeczność</h4>
+          <h4 class="footer-col-title">Społeczność & Zamówienia</h4>
           <ul class="footer-links">
             <li>
               <a href="https://www.facebook.com/profile.php?id=61584108646332" target="_blank" rel="noopener noreferrer" class="footer-link" id="footer-link-fb">
@@ -2236,10 +2387,10 @@
               </a>
             </li>
             <li>
-              <div class="footer-link">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                <span>Codziennie: 08:30 — 18:00</span>
-              </div>
+              <a href="#zamowienia" class="footer-link" id="footer-link-orders">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                <span>Wysyłka serków na zamówienie</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -2250,7 +2401,7 @@
     <!-- Bottom Bar -->
     <div class="footer-bottom-bar">
       <div class="container footer-bottom-inner">
-        <p>&copy; 2026 Bacówka u Stocha — Dzianisz, Kościelisko. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; 2026 Bacówka u Stocha — Dzianisz obok Kościeliska. Wszelkie prawa zastrzeżone.</p>
         <p class="footer-bottom-quote">„Smak gór w każdym kęsie.”</p>
       </div>
     </div>
